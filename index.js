@@ -4,7 +4,13 @@ function getNum() {
 }
 class NumPicker extends React.Component {
   render() {
-    return <h1>Your number is {getNum()}</h1>;
+    const num = getNum();
+    return (
+      <div>
+        <h1> Your number is: {num}</h1>
+        <p>{num === 7 ? "Congrats" : "Unlucky"}</p>
+      </div>
+    );
   }
 }
 
